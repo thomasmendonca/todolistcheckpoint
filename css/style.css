@@ -30,3 +30,25 @@
     --spacing-xlarge: 40px;
   
   }
+  body {
+    font-family: 'Open Sans', Arial, Helvetica, 'Ubuntu', sans-serif;
+    font-size: 16px;
+    background-color: var(--color-interface-light);
+  }
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-medium) var(--spacing-small);
+    align-items: center;
+  }
+  .nav-menu-button{
+    cursor: pointer;
+    background-color: transparent;
+    border:0;
+  }
+  .nav-menu-img{
+    border-radius:50% ;
+    width: 34px;
+    height: 34px;
+    
+  }
