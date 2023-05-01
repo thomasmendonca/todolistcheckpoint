@@ -133,6 +133,8 @@
     display: flex;
     gap: var(--spacing-small);
     white-space: nowrap;
+    align-items: center;
+    gap: var(--spacing-medium);
   }
   .task-buttons{
     display: flex;
@@ -144,14 +146,49 @@
     border: none;
     cursor: pointer;
   }
+  .button-edit:hover{
+    color: var(--color-brand-primary);
+  }
   .button-delete{
     background-color: transparent;
     color: var(--color-text-dark);
     border: none;
     cursor: pointer;
   }
+  .button-delete:hover{
+    color: var(--color-brand-primary);
+  }
   #checkbox1:checked~#text1{
     text-decoration: line-through;
   }
+  #checkbox2:checked~#text2{
+    text-decoration: line-through;
+  }
+  .task-check-box{
+    display: none;
+  }
+  .check-icon{
+    cursor: pointer;
+    background-color: var(--color-common-light);
+    color: transparent;
+    border: 2px solid var(--color-text-dark);
+    border-radius: 4px;
+    height: 1.2rem;
+    width: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .task-check-box:checked~.check-icon{
+    background-color: var(--color-text-dark);
+    color: var(--color-common-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+
   
  
