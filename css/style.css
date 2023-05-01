@@ -179,7 +179,7 @@
     align-items: center;
     justify-content: center;
   }
-
+  
   .task-check-box:checked~.check-icon{
     background-color: var(--color-text-dark);
     color: var(--color-common-light);
@@ -187,6 +187,9 @@
     align-items: center;
     justify-content: center;
     
+  }
+  .task-check-box::before~.check-icon span{
+    display: none;
   }
 
 
