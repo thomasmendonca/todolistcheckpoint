@@ -22,24 +22,26 @@
     --color-common-light: #ffffff;
     --color-common-dark: #000000;
   
-    --spacing-xsmall: 4px;
-    --spacing-small: 8px;
-    --spacing-default: 16px;
-    --spacing-medium: 24px;
-    --spacing-large: 32px;
-    --spacing-xlarge: 40px;
+    --spacing-xsmall: 0.25rem;
+    --spacing-small: 0.25rem;
+    --spacing-default: 1rem;
+    --spacing-medium: 1.5rem;
+    --spacing-large: 2rem;
+    --spacing-xlarge: 2.5rem;
   
   }
   body {
     font-family: 'Open Sans', Arial, Helvetica, 'Ubuntu', sans-serif;
-    font-size: 16px;
-    background-color: var(--color-interface-light);
+    font-size: 1rem;
+    background-color: var(--color-interface-dark);
   }
+  /* MENU */
   .nav-menu{
     display: flex;
     justify-content: space-between;
     padding: var(--spacing-medium) var(--spacing-small);
     align-items: center;
+    border: solid 1px red;
   }
   .nav-menu-button{
     cursor: pointer;
@@ -51,4 +53,54 @@
     width: 34px;
     height: 34px;
     
+  }
+  /* Section forms */
+  .container{
+    border: solid 1px red;
+    width: 94%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--spacing-large);
+  }
+  .title{
+    line-height: 1.5;
+    letter-spacing: -1px;
+    font-weight: 600;
+    color: var(--color-text-light);
+  }
+  .subtitle{
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--color-brand-primary);
+  }
+  .form{
+    margin-top: var(--spacing-large);
+    line-height: 1.2;
+  }
+  .form-label{
+    font-weight: 600;
+    color: var(--color-text-dark);
+  }
+  .form-input-text{
+    height: 2.3rem;
+    border: solid 1px var(--color-text-dark);
+    border-radius: 5px;
+    width: 74%;
+  }
+  .form-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.3rem;
+    width: 12%;
+    border-radius:5px;
+    border: none;
+    color: var(--color-common-light);
+    background-color: var(--color-brand-secondary);
+  }
+  .form-search{
+    display: flex;
+    align-items: center;
+    gap: 3px;
   }
